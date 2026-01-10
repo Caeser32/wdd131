@@ -2,10 +2,152 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>WDD131</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>WDD 131 – Dynamic Web Fundamentals – Tumisang Msiza</title>
+    <meta
+      name="description"
+      content="WDD 131 – Dynamic Web Fundamentals home page for Tumisang Msiza. Demonstrates HTML, CSS and basic JavaScript."
+    />
+    <meta name="author" content="Tumisang Msiza" />
+
+    <link rel="stylesheet" href="styles/base.css" />
+    <script src="scripts/getdates.js" defer></script>
   </head>
   <body>
-    <h1>WDD 131</h1>
-    <p>GitHub Pages is now working.</p>
+    <header>
+      <span id="course-title">WDD 131 – Dynamic Web Fundamentals</span>
+
+      <nav>
+        <a
+          href="https://www.linkedin.com/in/tumisang-msiza-58b950267/"
+          target="_blank"
+          rel="noopener"
+          >LinkedIn</a
+        >
+        <a href="https://byupw.instructure.com/" target="_blank" rel="noopener"
+          >Canvas</a
+        >
+        <a
+          href="https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/64?lang=eng&id=p33#p33"
+          target="_blank"
+          rel="noopener"
+          >Scripture</a
+        >
+        <a href="#" aria-disabled="true">Final Project</a>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Tumisang Msiza</h1>
+
+      <div class="grid">
+        <div class="left-column">
+          <section class="card about-card">
+            <h2>About Me</h2>
+
+            <div class="card-content">
+              <img
+                class="profile"
+                src="images/profile.jpg"
+                alt="Portrait of Tumisang Msiza"
+              />
+              <div class="text">
+                <p>
+                  My name is <strong>Tumisang Msiza</strong>. Family is central
+                  to how I approach life and learning. I have been married to my
+                  wife for almost two years — one of my greatest personal
+                  highlights. I am the oldest of three siblings and these
+                  responsibilities shaped my leadership and care for others.
+                </p>
+
+                <p>
+                  I served a full-time mission for The Church of Jesus Christ of
+                  Latter-day Saints during the COVID period, serving in the
+                  Zimbabwe Bulawayo Mission and later in the South Africa Cape
+                  Town Mission. These experiences influenced my approach to
+                  service, learning, and personal development.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <section class="card project-card">
+            <h2>Interests & Hobbies</h2>
+
+            <img
+              class="creative"
+              src="images/creative.png"
+              alt="Illustration representing creative design and drawing"
+            />
+
+            <div class="project-text">
+              <p>
+                I enjoy creative activities such as drawing and design. I
+                previously studied graphic design and animation, and I enjoy
+                visual storytelling. Earlier, I explored animation projects on a
+                YouTube channel that helped me develop patience and attention to
+                detail.
+              </p>
+
+              <p>
+                I stay active with sports (rugby, tennis) and enjoy
+                communication activities — debates, poetry, and public speaking
+                — which helped build confidence and clear expression.
+              </p>
+            </div>
+          </section>
+        </div>
+
+        <aside class="right-column">
+          <section class="card resources-card">
+            <h2>Web Dev Resources</h2>
+
+            <ul class="resources">
+              <li>
+                <a href="https://dev.to/" target="_blank" rel="noopener"
+                  >Dev.to Community</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.smashingmagazine.com/"
+                  target="_blank"
+                  rel="noopener"
+                  >Smashing Magazine</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.w3schools.com/"
+                  target="_blank"
+                  rel="noopener"
+                  >W3Schools</a
+                >
+              </li>
+              <li>
+                <a href="https://www.udemy.com/" target="_blank" rel="noopener"
+                  >Udemy</a
+                >
+              </li>
+              <li>
+                <a href="https://css-tricks.com/" target="_blank" rel="noopener"
+                  >CSS-Tricks</a
+                >
+              </li>
+              <li>
+                <a href="https://github.com/" target="_blank" rel="noopener"
+                  >GitHub</a
+                >
+              </li>
+            </ul>
+          </section>
+        </aside>
+      </div>
+    </main>
+
+    <footer>
+      <p>© <span id="currentyear"></span> Tumisang Msiza</p>
+      <p id="lastModified"></p>
+    </footer>
   </body>
 </html>
