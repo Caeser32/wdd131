@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Album – WDD 131 – Tumisang Msiza</title>
+    <meta name="description" content="A responsive temple album showcasing beautiful temples from around the world. WDD 131 Dynamic Web Fundamentals project by Tumisang Msiza.">
+    <meta name="author" content="Tumisang Msiza">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css">
+    <script src="scripts/temples.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Temple Album</h1>
+        <button id="menu-button" aria-label="Toggle navigation menu">☰</button>
+        <nav id="main-nav">
+            <a href="#">Home</a>
+            <a href="#">Old</a>
+            <a href="#">New</a>
+            <a href="#">Large</a>
+            <a href="#">Small</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Temples Around the World</h2>
+        
+        <div class="gallery">
+            <figure>
+                <img src="images/temple.jpg" alt="Johannesburg South Africa Temple" loading="lazy" width="400" height="250">
+                <figcaption>Johannesburg South Africa Temple</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/temple.jpg" alt="Rome Italy Temple" loading="lazy" width="400" height="250">
+                <figcaption>Rome Italy Temple</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/temple.jpg" alt="Paris France Temple" loading="lazy" width="400" height="250">
+                <figcaption>Paris France Temple</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/temple.jpg" alt="Washington D.C. Temple" loading="lazy" width="400" height="250">
+                <figcaption>Washington D.C. Temple</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/temple.jpg" alt="Mesa Arizona Temple" loading="lazy" width="400" height="250">
+                <figcaption>Mesa Arizona Temple</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/temple.jpg" alt="San Diego California Temple" loading="lazy" width="400" height="250">
+                <figcaption>San Diego California Temple</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/temple.jpg" alt="Laie Hawaii Temple" loading="lazy" width="400" height="250">
+                <figcaption>Laie Hawaii Temple</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/temple.jpg" alt="London England Temple" loading="lazy" width="400" height="250">
+                <figcaption>London England Temple</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/temple.jpg" alt="Tokyo Japan Temple" loading="lazy" width="400" height="250">
+                <figcaption>Tokyo Japan Temple</figcaption>
+            </figure>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Tumisang Msiza • South Africa</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
