@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>South Africa – WDD 131 – Tumisang Msiza</title>
+    <meta name="description" content="Discover South Africa - a beautiful country with diverse landscapes, rich culture, and vibrant cities. WDD 131 Dynamic Web Fundamentals project.">
+    <meta name="author" content="Tumisang Msiza">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>South Africa</h1>
+    </header>
+
+    <main>
+        <section class="hero">
+            <img 
+                src="images/South Africa Table Mountain.webp" 
+                srcset="images/South Africa Temple mountain small.webp 480w, images/South Africa Table Mountain.webp 1200w"
+                sizes="(max-width: 600px) 480px, 1200px"
+                alt="Table Mountain and Cape Town harbor with a traditional boat in the foreground"
+                width="1200"
+                height="797"
+                loading="eager"
+            >
+        </section>
+
+        <section class="data-section">
+            <h2>Data</h2>
+            <dl>
+                <dt>Area:</dt>
+                <dd>1,221,037 sq km</dd>
+
+                <dt>Population:</dt>
+                <dd>60,414,495</dd>
+
+                <dt>Capital:</dt>
+                <dd>Pretoria (Executive)</dd>
+
+                <dt>Languages:</dt>
+                <dd>11 Official Languages</dd>
+
+                <dt>Currency:</dt>
+                <dd>South African Rand (ZAR)</dd>
+
+                <dt>Time Zone:</dt>
+                <dd>UTC+2</dd>
+
+                <dt>Calling Code:</dt>
+                <dd>+27</dd>
+
+                <dt>Internet TLD:</dt>
+                <dd>.za</dd>
+            </dl>
+        </section>
+
+        <section class="weather-section">
+            <h2>Weather</h2>
+            <img src="images/weather.svg" alt="Partly cloudy weather icon" class="weather-icon-mobile" width="48" height="48">
+            <dl>
+                <dt>Temperature:</dt>
+                <dd><span id="temperature">8</span> °C</dd>
+
+                <dt>Conditions:</dt>
+                <dd>Partly Cloudy</dd>
+
+                <dt>Wind:</dt>
+                <dd><span id="wind-speed">10</span> km/h</dd>
+
+                <dt>Wind Chill:</dt>
+                <dd><span id="wind-chill">N/A</span></dd>
+            </dl>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> ❄ Tumisang Msiza ❄ South Africa</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
