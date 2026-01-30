@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filtered Temple Album – WDD 131 – Tumisang Msiza</title>
+    <meta name="description" content="A filtered temple album showcasing temples from around the world with dynamic filtering. WDD 131 project by Tumisang Msiza.">
+    <meta name="author" content="Tumisang Msiza">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css">
+    <script src="scripts/filtered-temples.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Temple Album</h1>
+        <button id="menu-button" aria-label="Toggle navigation menu">☰</button>
+        <nav id="main-nav">
+            <a href="#" class="active">Home</a>
+            <a href="#">Old</a>
+            <a href="#">New</a>
+            <a href="#">Large</a>
+            <a href="#">Small</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Temples Around the World</h2>
+        <div id="gallery" class="gallery"></div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Tumisang Msiza • South Africa</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,38 @@
+@media screen and (min-width: 768px) {
+    header {
+        flex-wrap: nowrap;
+    }
+
+    #menu-button {
+        display: none;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        width: auto;
+        margin-top: 0;
+    }
+
+    nav a {
+        border-top: none;
+        padding: 0.5rem 1rem;
+        border-radius: 4px;
+    }
+
+    main h2 {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
