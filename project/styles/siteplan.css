@@ -1,0 +1,241 @@
+:root {
+    --bg-dark: #0f0e17;
+    --bg-card: #1c1b29;
+    --accent-orange: #ff8906;
+    --accent-magenta: #e53170;
+    --text-body: #a7a9be;
+    --text-heading: #fffffe;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--bg-dark);
+    color: var(--text-body);
+    font-family: "Poppins", sans-serif;
+    line-height: 1.7;
+}
+
+header {
+    background-color: var(--bg-card);
+    text-align: center;
+    padding: 2.5rem 1rem;
+    border-bottom: 3px solid var(--accent-orange);
+}
+
+header h1 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 3rem;
+    color: var(--accent-orange);
+    letter-spacing: 2px;
+}
+
+header p {
+    color: var(--text-body);
+    font-size: 1rem;
+    margin-top: 0.25rem;
+}
+
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+}
+
+section {
+    background-color: var(--bg-card);
+    border-radius: 8px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-left: 4px solid var(--accent-orange);
+}
+
+h2 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 2rem;
+    color: var(--accent-orange);
+    letter-spacing: 1.5px;
+    margin-bottom: 1rem;
+}
+
+h3 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 1.4rem;
+    color: var(--text-heading);
+    margin-bottom: 0.75rem;
+    margin-top: 1.5rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+strong {
+    color: var(--text-heading);
+}
+
+em {
+    color: var(--accent-magenta);
+}
+
+ul {
+    padding-left: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+li {
+    margin-bottom: 0.75rem;
+}
+
+/* Color swatches */
+
+.color-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.color-swatch {
+    border-radius: 8px;
+    padding: 1.5rem 1rem;
+    text-align: center;
+    color: var(--text-heading);
+    min-height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.swatch-label {
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.swatch-use {
+    font-size: 0.85rem;
+    opacity: 0.85;
+}
+
+/* Typography samples */
+
+.font-sample {
+    background-color: var(--bg-dark);
+    border-radius: 6px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.demo-heading {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 2rem;
+    color: var(--text-heading);
+    margin-bottom: 0.75rem;
+}
+
+.demo-body {
+    font-family: "Poppins", sans-serif;
+    color: var(--text-body);
+    margin-bottom: 0.75rem;
+}
+
+/* Wireframes */
+
+.wireframe {
+    background-color: var(--bg-dark);
+    border: 2px dashed var(--accent-magenta);
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+
+.wireframe-mobile {
+    max-width: 320px;
+}
+
+.wire-block {
+    background-color: var(--bg-card);
+    border: 1px solid var(--accent-magenta);
+    border-radius: 4px;
+    padding: 0.75rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+    font-size: 0.85rem;
+    color: var(--text-body);
+}
+
+.wire-hero {
+    padding: 2rem 0.75rem;
+}
+
+.wire-label {
+    background-color: transparent;
+    border: none;
+    font-weight: 600;
+    color: var(--text-heading);
+}
+
+.wire-gallery-grid {
+    display: grid;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.wire-gallery-grid .wire-block {
+    margin-bottom: 0;
+    padding: 1.5rem 0.5rem;
+}
+
+.mobile-gallery {
+    grid-template-columns: 1fr 1fr;
+}
+
+.wire-row {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.wire-row .wire-block {
+    margin-bottom: 0;
+}
+
+.desktop-gallery {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+footer {
+    background-color: var(--bg-card);
+    text-align: center;
+    padding: 1.5rem;
+    border-top: 3px solid var(--accent-orange);
+    color: var(--text-body);
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 2.25rem;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+    }
+
+    section {
+        padding: 1.25rem;
+    }
+
+    .color-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    main {
+        padding: 1rem;
+    }
+}
