@@ -122,6 +122,28 @@ li {
     opacity: 0.85;
 }
 
+.swatch-bg-dark {
+    background-color: #0f0e17;
+}
+
+.swatch-bg-card {
+    background-color: #1c1b29;
+}
+
+.swatch-orange {
+    background-color: #ff8906;
+    color: #0f0e17;
+}
+
+.swatch-magenta {
+    background-color: #e53170;
+}
+
+.swatch-text {
+    background-color: #a7a9be;
+    color: #0f0e17;
+}
+
 /* Typography samples */
 
 .font-sample {
