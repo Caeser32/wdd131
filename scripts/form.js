@@ -30,7 +30,10 @@ const productSelect = document.getElementById("product-name");
 
 for (let i = 0; i < products.length; i++) {
     const option = document.createElement("option");
-    option.value = products[i].name;
+    option.value = products[i].id;
     option.textContent = products[i].name;
     productSelect.appendChild(option);
 }
+
+document.getElementById("currentyear").textContent = new Date().getFullYear();
+document.getElementById("lastModified").textContent = "Last Modified: " + document.lastModified;
