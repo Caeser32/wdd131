@@ -30,7 +30,7 @@ const productSelect = document.getElementById("product-name");
 
 for (let i = 0; i < products.length; i++) {
     const option = document.createElement("option");
-    option.value = products[i].id;
+    option.value = products[i].name;
     option.textContent = products[i].name;
     productSelect.appendChild(option);
 }
