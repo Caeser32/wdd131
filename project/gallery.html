@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | Caesar_Siza Portfolio</title>
+    <meta name="description" content="Browse the creative work of Tumisang Msiza — story time animations, character designs, graphic design, and more.">
+    <meta name="author" content="Tumisang Msiza">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="scripts/main.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-inner">
+            <span class="site-name">Caesar_Siza</span>
+            <button class="menu-btn" aria-label="Toggle navigation">&#9776;</button>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="references.html">References</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <h1>Gallery</h1>
+            <p class="gallery-intro">A collection of my work across animation, character design, and graphic design. Use the filters to browse by category.</p>
+
+            <div class="filter-buttons">
+                <button class="filter-btn" data-category="all">All</button>
+                <button class="filter-btn" data-category="story-time">Story Time Animations</button>
+                <button class="filter-btn" data-category="character-design">Character Design</button>
+                <button class="filter-btn" data-category="graphic-design">Graphic Design</button>
+            </div>
+
+            <div class="gallery-grid"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Tumisang Msiza</p>
+        <p><a href="references.html">References</a></p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

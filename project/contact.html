@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Caesar_Siza Portfolio</title>
+    <meta name="description" content="Get in touch with Tumisang Msiza for commissions, collaborations, or general inquiries.">
+    <meta name="author" content="Tumisang Msiza">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="scripts/main.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-inner">
+            <span class="site-name">Caesar_Siza</span>
+            <button class="menu-btn" aria-label="Toggle navigation">&#9776;</button>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="references.html">References</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <h1>Contact Me</h1>
+        <p class="contact-intro">Have a question, want to collaborate, or interested in a commission? Fill out the form below and I'll get back to you.</p>
+
+        <form class="contact-form" id="contact-form" method="get" action="#">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+            <label for="subject">Subject</label>
+            <select id="subject" name="subject" required>
+                <option value="" disabled selected>Choose a subject...</option>
+                <option value="Commission Request">Commission Request</option>
+                <option value="Collaboration">Collaboration</option>
+                <option value="General Inquiry">General Inquiry</option>
+                <option value="Feedback">Feedback</option>
+            </select>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+
+            <div class="checkbox-row">
+                <input type="checkbox" id="subscribe" name="subscribe" value="yes">
+                <label for="subscribe">Subscribe to updates</label>
+            </div>
+
+            <input type="submit" value="Send Message">
+        </form>
+
+        <div class="form-message" id="form-message"></div>
+        <p class="msg-count" id="message-count"></p>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Tumisang Msiza</p>
+        <p><a href="references.html">References</a></p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
